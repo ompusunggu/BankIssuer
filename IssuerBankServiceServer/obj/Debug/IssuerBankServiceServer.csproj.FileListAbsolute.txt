@@ -1,0 +1,8 @@
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\bin\Debug\IssuerBankServiceServer.exe.config
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\bin\Debug\IssuerBankServiceServer.exe
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\bin\Debug\IssuerBankServiceServer.pdb
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\bin\Debug\IssuerBankServiceLibrary.dll
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\bin\Debug\IssuerBankServiceLibrary.pdb
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\obj\Debug\IssuerBankServiceServer.csprojResolveAssemblyReference.cache
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\obj\Debug\IssuerBankServiceServer.exe
+D:\ProjectEBA\BankIssuer\IssuerBankServiceServer\obj\Debug\IssuerBankServiceServer.pdb

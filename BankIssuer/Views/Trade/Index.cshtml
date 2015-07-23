@@ -1,0 +1,106 @@
+﻿@model IEnumerable<BankIssuer.Models.TradeModels>
+
+@{
+    Layout = null;
+}
+
+@foreach(var item in Model){
+<table>
+    <tr>    
+        <td>
+            <div class="display-label">
+               @Html.DisplayNameFor(model => model.amount);
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(modelItem=>item.amount)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.time);
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(modelItem=>item.time)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.description);
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(modelItem=>item.description)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.issuer);
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(modelItem=>item.issuer)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.trade_type);
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(modelItem=>item.trade_type)
+            </div>
+        </td>
+    </tr>
+</table>
+}
+
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                

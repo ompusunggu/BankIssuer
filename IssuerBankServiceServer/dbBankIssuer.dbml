@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbBankIssuer" Class="dbBankIssuerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\Projects;Initial Catalog=dbBankIssuer;Integrated Security=True;Connect Timeout=30" SettingsObjectName="IssuerBankServiceServer.Properties.Settings" SettingsPropertyName="dbBankIssuerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.account" Member="accounts">
+    <Type Name="account">
+      <Column Name="id_account" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="account_number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="account_credit_card" Member="credit_cards" ThisKey="id_account" OtherKey="id_account" Type="credit_card" />
+      <Association Name="account_trade" Member="trades" ThisKey="id_account" OtherKey="id_account" Type="trade" />
+    </Type>
+  </Table>
+  <Table Name="dbo.credit_card" Member="credit_cards">
+    <Type Name="credit_card">
+      <Column Name="id_creditCard" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_account" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="limit" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="cc_number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="expiry_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="account_credit_card" Member="account" ThisKey="id_account" OtherKey="id_account" Type="account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.trade" Member="trades">
+    <Type Name="trade">
+      <Column Name="id_trade" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_account" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="issuer" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="trade_type" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="account_trade" Member="account" ThisKey="id_account" OtherKey="id_account" Type="account" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

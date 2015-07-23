@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankIssuer", "BankIssuer\BankIssuer.csproj", "{FFB7F2C4-764B-4106-B637-5CBF86055BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssuerBankServiceLibrary", "IssuerBankServiceLibrary\IssuerBankServiceLibrary.csproj", "{D16EC456-77C1-4C89-84ED-BE3F3FECE060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssuerBankServiceServer", "IssuerBankServiceServer\IssuerBankServiceServer.csproj", "{1B3169EE-519A-4A5B-99BD-6AC8BAA244EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFB7F2C4-764B-4106-B637-5CBF86055BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB7F2C4-764B-4106-B637-5CBF86055BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB7F2C4-764B-4106-B637-5CBF86055BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB7F2C4-764B-4106-B637-5CBF86055BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16EC456-77C1-4C89-84ED-BE3F3FECE060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16EC456-77C1-4C89-84ED-BE3F3FECE060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16EC456-77C1-4C89-84ED-BE3F3FECE060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16EC456-77C1-4C89-84ED-BE3F3FECE060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3169EE-519A-4A5B-99BD-6AC8BAA244EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3169EE-519A-4A5B-99BD-6AC8BAA244EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3169EE-519A-4A5B-99BD-6AC8BAA244EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3169EE-519A-4A5B-99BD-6AC8BAA244EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

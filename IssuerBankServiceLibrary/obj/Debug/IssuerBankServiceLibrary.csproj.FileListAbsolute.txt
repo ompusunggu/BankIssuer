@@ -1,0 +1,4 @@
+D:\ProjectEBA\BankIssuer\IssuerBankServiceLibrary\bin\Debug\IssuerBankServiceLibrary.dll
+D:\ProjectEBA\BankIssuer\IssuerBankServiceLibrary\bin\Debug\IssuerBankServiceLibrary.pdb
+D:\ProjectEBA\BankIssuer\IssuerBankServiceLibrary\obj\Debug\IssuerBankServiceLibrary.dll
+D:\ProjectEBA\BankIssuer\IssuerBankServiceLibrary\obj\Debug\IssuerBankServiceLibrary.pdb

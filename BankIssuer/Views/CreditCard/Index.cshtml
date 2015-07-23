@@ -1,0 +1,64 @@
+﻿@model BankIssuer.Models.CreditCardModels
+
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>    
+        <td>
+            <div>
+                @Html.ActionLink("Index","Index","Account")
+                @Html.ActionLink("Credit","Index","CreditCard")
+                @Html.ActionLink("Logout","Logout","Account")
+            </div>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.limit)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.limit)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.cc_number)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.cc_number)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.exp_date)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.exp_date)
+            </div>
+        </td>
+    </tr>
+</table>

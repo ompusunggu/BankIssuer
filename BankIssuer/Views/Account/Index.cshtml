@@ -1,0 +1,64 @@
+﻿@model BankIssuer.Models.AccountModels
+
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>    
+        <td>
+            <div>
+                @Html.ActionLink("Index","Index","Account")
+                @Html.ActionLink("Credit", "Index", "CreditCard", new { _idAccount = Session["id_account"]},new { _idAccount = Session["id_account"]})
+                @Html.ActionLink("Logout","Logout","Account")
+            </div>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.name)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.name)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.balance)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.balance)
+            </div>
+        </td>
+    </tr>
+    <tr>    
+        <td>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.account_number)
+            </div>
+        </td>
+        <td>
+            <div class="display-label">
+                :
+            </div>
+        </td>
+        <td>
+            <div class="display-field">
+                 @Html.DisplayFor(model=>model.account_number)
+            </div>
+        </td>
+    </tr>
+</table>

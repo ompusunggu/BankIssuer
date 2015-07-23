@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbBankIssuer">
+  <DataContextMoniker Name="/dbBankIssuerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1614781b-77a1-404b-b160-d1e49d273c3c" absoluteBounds="0.75, 2.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/dbBankIssuerDataContext/account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95de8aee-8ea1-422a-80b3-ebbd6bc463cc" absoluteBounds="0.765, 2.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="255f37bb-5a3e-43a0-b6fb-fff5a1cea853" absoluteBounds="4.75, 2, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/dbBankIssuerDataContext/credit_card" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a58d624-3b48-447b-ad88-e2e2a8a5471b" absoluteBounds="4.765, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.13544840494792); (4.75 : 3.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBankIssuerDataContext/account/account_credit_card" />
+      <nodes>
+        <classShapeMoniker Id="1614781b-77a1-404b-b160-d1e49d273c3c" />
+        <classShapeMoniker Id="255f37bb-5a3e-43a0-b6fb-fff5a1cea853" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c48a6dcb-960f-4a45-bffb-e1eb6e60fe26" absoluteBounds="3.75, 4.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbBankIssuerDataContext/trade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10de2f0f-3236-4958-b16a-0fc38622d066" absoluteBounds="3.765, 5.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.14829752604167); (4.21875 : 4.14829752604167); (4.21875 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBankIssuerDataContext/account/account_trade" />
+      <nodes>
+        <classShapeMoniker Id="1614781b-77a1-404b-b160-d1e49d273c3c" />
+        <classShapeMoniker Id="c48a6dcb-960f-4a45-bffb-e1eb6e60fe26" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
